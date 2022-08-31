@@ -1,0 +1,30 @@
+{
+  "name": "lei-sy-us",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup -c"
+  },
+  "keywords": [],
+  "author": "leijiang <18760660507@163.com>",
+  "license": "ISC",
+  "dependencies": {
+    "dayjs": "^1.11.5",
+    "fs-extra": "^10.1.0",
+    "rollup": "^2.78.1"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^22.0.2",
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "@rollup/plugin-typescript": "^8.4.0",
+    "@types/fs-extra": "^9.0.13",
+    "@types/node": "^18.7.14",
+    "rollup-plugin-cleandir": "^2.0.0",
+    "rollup-plugin-dts": "^4.2.2",
+    "rollup-plugin-terser": "^7.0.2",
+    "tslib": "^2.4.0",
+    "typescript": "^4.8.2"
+  }
+}
