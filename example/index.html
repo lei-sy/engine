@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button >按钮</button>
+    <input type="text">
+    <script src="../apis/throttle.js"></script>
+    <script src="../apis/debounce.js"></script>
+    <script>
+       const input = document.querySelector('input')
+       const button = document.querySelector('button')
+       const testinput = throttle1(function(e) {
+        console.log(e);
+       }, 1000)
+
+       const testclick = debounce(function(e) {
+        console.log(e);
+       }, 1000)
+       input.addEventListener('input', testinput)
+       button.addEventListener('click', testclick)
+    </script>
+</body>
+</html>
